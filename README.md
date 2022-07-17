@@ -1,7 +1,10 @@
 # Visualization Practice in R
 
-
 ## Objective
 
 This repo is devoted to sharing my data visualization projects with others.
+
+## 2022, Week 28, European flights | [Code](TidyTuesday\2022_w28_European_flights.R)
+
+![](TidyTuesday\2022_w28_European_flights.Reuropean-flights.png)
 
