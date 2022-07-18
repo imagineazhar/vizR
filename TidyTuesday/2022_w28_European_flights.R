@@ -43,12 +43,12 @@ total |> ggplot(aes(x=yearmonth, y=total_flights, group=1))+
   theme(
     plot.background = element_rect(fill = "#F0EBE3"),
     panel.background = element_rect(fill = "#F0EBE3"),
-    plot.caption = element_text(color = "grey50", vjust = 0, size = 8),
     plot.title = element_text( face = "bold", size=24.4,
                                margin = margin(t=25), family = "Noto Serif"),
     plot.subtitle = element_text(face = "plain", size=12, color = "grey50", 
                                      margin = margin(t=5,b=15),
                                      family = "Roboto", lineheight = 1.2),
+    plot.caption = element_text(color = "grey50", vjust = 0, size = 8),
     plot.margin = unit(c(1,1,1,1), "cm"))+
   facet_wrap(~STATE_NAME)
   
