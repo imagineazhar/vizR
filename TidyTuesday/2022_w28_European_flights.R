@@ -48,10 +48,10 @@ total |> ggplot(aes(x=yearmonth, y=total_flights, group=1))+
     plot.subtitle = element_text(face = "plain", size=12, color = "grey50", 
                                      margin = margin(t=5,b=15),
                                      family = "Roboto", lineheight = 1.2),
-    plot.caption = element_text(color = "grey50", vjust = 0, size = 8),
+    plot.caption = element_text(color = "grey50", vjust = 0, size = 11),
     plot.margin = unit(c(1,1,1,1), "cm"))+
   facet_wrap(~STATE_NAME)
   
 #Save plot  
 ggsave("european-flights.png", 
-       dpi = 160)
+       units = 'in', width = 7, height = 5, dpi = 300)
