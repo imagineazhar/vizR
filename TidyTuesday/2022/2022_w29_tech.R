@@ -14,3 +14,23 @@ showtext_auto()
 #read data
 tt_data <- tt_load(2022, week=29)
 tech <- tt_data$flights
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+labs(x = NULL,
+     y = NULL,
+     caption = "**Data**: Tate Collection | **Graphic**: @imagineazhar") 
