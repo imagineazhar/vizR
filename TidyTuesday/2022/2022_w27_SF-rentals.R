@@ -23,10 +23,6 @@ rent_sum <- rent_clean |> group_by(year, nhood)|>
   mutate(year=factor(year,levels = c('2014','2015','2016','2017','2018'))) |> 
   summarise(price=mean(price))
 
-
-
-
-
 #plot
 rent_sum|> ggplot(aes(x=price))+
   geom_histogram( binwidth=1000, fill="#69b3a2", color="#e9ecef", alpha=0.9) +
@@ -43,3 +39,7 @@ rent_sum|> ggplot(aes(x=price))+
                                  family = "Roboto", lineheight = 1.2),
     plot.caption = element_text(color = "grey50", vjust = 0, size = 11),
     plot.margin = unit(c(1,1,1,1), "cm"))
+
+#Save plot  
+ggsave("2022_W27_SF-rentals.png", 
+       units = 'in', width = 7, height = 5, dpi = 100)
